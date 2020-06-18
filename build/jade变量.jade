@@ -1,0 +1,13 @@
+html
+    head
+    body
+        div 我的名字:#{name}
+        div(style=json,title="ss")
+        div(class=arr)
+            span=d
+            span=f
+        div(class=arr)
+            -let a=5;
+            -let b=6;
+            span 结果是#{a+b}
+        div(class=arr class='active')
