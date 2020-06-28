@@ -3,6 +3,7 @@ const express = require('express');
 let server = express();
 let oRoute = express.Router();
 server.use('/user/',oRoute);
+// server.use('/post/',oRoute);
 oRoute.get('/a.html',function(req,res){
     res.send('<h1>Hello World</h1>');
 })
