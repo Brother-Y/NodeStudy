@@ -8,6 +8,7 @@ const server = http.createServer((req,res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain')
     fs.readFile('./data.json', (err,data) =>{
+        console.log(data);
         res.end(data);
     })
 })
